@@ -9,7 +9,7 @@ public class ArraySort {
         int [] nums = {5,2,3,-1,3};
         int min = Arrays.stream(nums).min().getAsInt();
         int max = Arrays.stream(nums).max().getAsInt();
-
+        System.out.println("Min: " + min);
         HashMap<Integer,Integer> mp = new HashMap<>();
         for(int num : nums){
             mp.put(num, mp.getOrDefault(num, 0) + 1);
